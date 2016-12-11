@@ -1,0 +1,816 @@
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222222;
+}
+
+/* ============================== */
+/* HEADER / SITE NAV              */
+/* ============================== */
+header {
+    background-color: #53B116;
+}
+header h1 {
+    color: #fff7e2;
+}
+#site-nav ul {
+    list-style-type: none;
+}
+#site-nav ul li {
+    display: inline;
+}
+#site-nav ul li a {
+    text-decoration: none;
+    color: #fff7e2;
+    transition: 0.3s ease-in-out;
+}
+#site-nav ul li a:hover {
+    color: #2B6D00;
+}
+.highlight {
+    color: #2B6D00;
+}
+
+/* ============================== */
+/* CATEGORY NAVIGATION            */
+/* ============================== */
+.album-list h2 {
+    color: #fff7e2;
+    background-color: #2B6D00;
+}
+.album-list:hover h2 {
+    background-color: #71C838;
+}
+.album-list h2 a {
+    color: #fff7e2;
+    text-decoration: none;
+    text-align: center;
+}
+.album-list ul {
+    background-color: #444444;
+    list-style-type: none;
+    transition: 1s ease-in-out;
+}
+.album-list ul a {
+    text-decoration: none;
+    color: #fff7e2;
+}
+.album-list li {
+    text-align: center;
+}
+.album-list li:hover {
+    background-color: #71C838;
+}
+.active-album {
+    background-color: #71C838;
+}
+.active-page {
+    color: #2B6D00 !important;
+}
+
+/* ============================== */
+/* PORTFOLIO VIEW                 */
+/* ============================== */
+#gallery {
+    background-color: #000000;
+}
+#gallery h2 { /* <------ Album Title Styling -- */
+    text-align: center; 
+    color: #999999;
+    background-color: #444444
+}
+#gallery h3 { /* <------ Album Sub-Title Styling -- */
+    text-align: center;
+    color: #999999; 
+    background-color: #444444;
+}
+.gallery-default {
+    background-image: url(../assets/toystorecarytown.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.gallery-default p {
+    color: #fff7e2;
+    text-align: center;
+}
+.image-info {
+    font-style: italic;
+    color: #999999;
+    text-align: center;
+}
+.thumbnails {
+    background-color: #444444;
+}
+.thumbnails img {
+    opacity: 0.3;
+    transition: 0.3s ease-in-out;
+}
+.thumbnails img:hover {
+    opacity: 1;
+}
+
+/* ============================== */
+/* ABOUT PAGE                     */
+/* ============================== */
+#about-section {
+    background-color: #2B6D00;
+}
+
+/* ============================== */
+/* COPYRIGHT PAGE                 */
+/* ============================== */
+#copyright-section {
+    background-color: #2B6D00;
+}
+.text-wrapper p {
+    color: #333333;
+}
+.text-wrapper {
+    background-color: #FFF7E2 !important;
+    box-shadow: 0 0 10px #444444;
+}
+
+/* ============================== */
+/* CONTACT FORM                   */
+/* ============================== */
+#contact-section {
+    background-color: #2B6D00;
+}
+.contact-form {
+    background-color: #fff7e2;
+    background-image: url(../assets/airmail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px #444444;
+}
+.submit-button {
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+.submit-button:hover {
+    color: #fff7e2; 
+    background-color: #CF5854;
+}
+
+
+/* ============================== */
+/* FOOTER                         */
+/* ============================== */
+footer {
+    background-color: #53B116;
+}
+footer p, footer a {
+    text-align: center;
+    color: #fff7e2;
+}
+footer a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+footer a:hover {
+    color: #2B6D00;
+}
+footer img {
+    background-color: #8E37C7;
+    filter: invert(100%);
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+footer img:hover {
+    background-color: #D492FF;
+    opacity: 1;
+}
+.stripe {
+    background-color: #2B6D00;
+}
+
+/* ============================== */
+/* MAP                            */
+/* ============================== */
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================ */
+/*              Media Queries                   */
+/* ============================================ */
+
+
+/* Desktop Range */
+@media (min-width: 1000px) {
+    
+    /* HEADER SITE NAV */
+    #container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    header {
+        width: 96%;
+        padding: 30px 2%;
+        display: table;
+    }
+    header h1 {
+        font-size: 200%;
+        font-weight: 700;
+        letter-spacing: 5px;
+        float: left;
+    }
+    #site-nav ul {
+        font-size: 90%;
+        line-height: 200%;
+        float: right;
+    }
+    #site-nav ul li a {
+        letter-spacing: 3px;
+        margin: 0 5px 0 0;
+    }
+
+    /* CATEGORY NAVIGATION */
+    #albums {
+        width: 100%;
+    }
+    .album-list h2 {
+        font-size: 75%;
+        font-weight: 400;
+        padding: 10px 10px;
+    }
+    .album-list h2 a {
+        display: block;
+    }
+    .album-list ul {
+        font-size: 75%;
+        height: 0px;
+        line-height: 30px;
+        overflow: hidden;
+    }
+    .album-list:hover ul {
+        height: 100px;
+    }
+    .album-list ul a {
+        display: block;
+    }
+    .album-list li {
+        width: 25%;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        float: left;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* PORTFOLIO VIEW */
+    #gallery {
+        width: 100%;
+    }
+    #gallery h2 {
+        padding: 15px 0px 0px 0px;
+        margin: 45px 0 0 0 ;
+        font-size: 150%;
+        font-weight: 700; 
+    }
+    #gallery h3 { /* <------ Album Sub-Title Styling -- */
+        padding: 5px 0 0 0;
+        font-size: 75%;
+        font-weight: 400;
+    }
+    .gallery-default p {
+        font-size: 600%;
+        font-weight: 700;
+        text-shadow: 1px 1px 15px #000000;
+        letter-spacing: 20px;
+        padding: 200px 0;
+    }
+    .view img {
+        display: block;
+        border: 15px solid #222222;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+    .image-info {
+        padding: 25px 0 15px 0;
+        font-size: 75%;
+        font-weight: 400;
+    }
+    .thumbnails {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+        position: relative;
+        text-align: center;
+    }
+    .thumbnails img {
+        display: inline-block;
+        margin: 10px;
+        height: 100px;
+        width: 100px;
+        border-radius: 3px;
+    }
+    .thumbnails img:hover {
+        border-radius: 50%;
+    }
+    .thumbnails ul li {
+        display: inline;
+    }
+    
+    /* ABOUT PAGE */
+    #about-section {
+        padding: 50px 15%;
+    }
+
+    /* COPYRIGHT PAGE */
+    #copyright-section {
+    padding: 50px 15%;
+    }
+    .text-wrapper p {
+        letter-spacing: 2px;
+        line-height: 20px;
+    }
+    .text-wrapper {
+        padding: 30px 40px;
+        border-radius: 5px;
+    }
+    
+    /* CONTACT PAGE */
+    #contact-section {
+        padding: 50px;
+    }
+    .contact-form {
+        width: 80%;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 40px 30px 30px 30px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 25%;
+        border-top: 3px solid #999999;
+        border-left: 3px solid #999999;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px 0 20px 0;
+    }
+    .contact-form textarea {
+        width: 50%;
+    }
+    .submit-button {
+        font-weight: 700;
+        border: 7px solid #CF5854 !important;
+    }
+    
+    /* FOOTER */
+    footer {
+        position: bottom;
+        clear: both;
+    }
+    footer p {
+        font-size: 75%;
+        letter-spacing: 3px;
+    }
+    footer img {
+        display: inline-block;
+        margin: 10px;
+        height: 48px;
+        width: 48px;
+        border-radius: 3px;
+    }
+    footer img:hover {
+        border-radius: 50%;
+    }
+    footer .social {
+        padding: 50px 0 0 0;
+    }
+    footer .copyright {
+        padding: 0 0 50px 0;
+    }
+    .icon-container {
+        width: 100%;
+        margin: 0 auto 50px auto;
+        position: relative;
+        text-align: center;
+    }
+    .stripe {
+        padding: 16px 0;
+        width: 100%;
+    }
+    
+}
+
+/* Tablet Range */
+
+@media (min-width: 481px) and (max-width: 999px) {
+    
+    /* HEADER SITE NAV */
+    #container {
+        width: 100%;
+    }
+    .hide-this {
+        display: none !important;
+    }
+    header {
+        width: 100%;
+        padding: 15px 0 5px 0;
+    }
+    header h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 200%;
+        letter-spacing: 5px;
+    }
+    #site-nav ul {
+        margin: 10px 0;
+        line-height: 25px;
+        font-size: 90%;
+        text-align: center;
+    }
+    #site-nav ul li a {
+        letter-spacing: 2px;
+        margin: 0 5px 0 0;
+    }
+    
+    /* CATEGORY NAVIGATION */
+    #albums {
+        width: 100%;
+    }
+    .album-list h2 {
+        font-size: 75%;
+        font-weight: 400;
+        padding: 10px 10px;
+    }
+    .album-list h2 a {
+        display: block;
+    }
+    .album-list ul {
+        font-size: 85%;
+        height: 0px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+    .album-list:hover ul {
+        height: 100px;
+    }
+    .album-list ul a {
+        display: block;
+    }
+    .album-list li {
+        width: 25%;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        float: left;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* PORTFOLIO VIEW */
+    #gallery {
+        width: 100%;
+    }
+    #gallery h2 {
+        padding: 15px 0px 0px 0px;
+        margin: 45px 0 0 0 ;
+        font-size: 120%;
+        font-weight: 700; 
+    }
+    #gallery h3 {
+        padding: 5px 0 0 0;
+        font-size: 75%;
+        font-weight: 400;
+    }
+    .gallery-default p {
+        font-size: 450%;
+        font-weight: 700;
+        text-shadow: 1px 1px 15px #000000;
+        letter-spacing: 15px;
+        padding: 200px 0;
+    }
+    .view img {
+        max-width: 70%;
+        max-height: 500px;
+        display: block;
+        border: 10px solid #222222;
+        border-radius: 5px;
+        margin: 0 auto;
+        
+    }
+    .image-info {
+        padding: 15px 0;
+        font-size: 75%;
+        font-weight: 400;
+    }
+    .thumbnails {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+        position: relative;
+        text-align: center;
+    }
+    .thumbnails img {
+        display: inline-block;
+        margin: 10px;
+        height: 85px;
+        width: 85px;
+        border-radius: 3px;
+    }
+    .thumbnails img:hover {
+        border-radius: 50%;
+    }
+    .thumbnails ul li {
+        display: inline;
+    }
+    
+    /* FOOTER */
+    footer {
+        position: bottom;
+        clear: both;
+    }
+    footer p {
+        font-size: 75%;
+        letter-spacing: 3px;
+    }
+    footer img {
+        display: inline-block;
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 3px;
+    }
+    footer img:hover {
+        border-radius: 50%;
+    }
+    footer .social {
+        padding: 20px 0 0 0;
+    }
+    footer .copyright {
+        padding: 0 0 50px 0;
+    }
+    .icon-container {
+        width: 100%;
+        margin: 0 auto 20px auto;
+        position: relative;
+        text-align: center;
+    }
+    .stripe {
+        padding: 16px 0;
+        width: 100%;
+    }
+    
+    /* PAGE SECTIONS */
+    #about-section, #copyright-section, #contact-section {
+        padding: 30px 10%;
+    }
+
+    /* COPYRIGHT PAGE */
+    .text-wrapper p {
+        font-size: 90%;
+        letter-spacing: 2px;
+        line-height: 16px;
+    }
+    .text-wrapper {
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    /* CONTACT PAGE */
+    .contact-form {
+        width: 80%;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 20px 5%;
+        background-color: #fff7e2;
+    }
+    .contact-form label {
+        font-size: 90%;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 30%;
+        border-top: 3px solid #999999;
+        border-left: 3px solid #999999;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px 0 10px 0;
+    }
+    .contact-form textarea {
+        width: 70%;
+    }
+    .submit-button {
+        font-weight: 700;
+        border: 5px solid #CF5854 !important;
+    }
+
+
+}
+
+/* Mobile Range */
+@media (max-width: 480px) {
+    
+    /* HEADER SITE NAV */
+    #container {
+        width: 100%;
+    }
+    .hide-this {
+        display: none !important;
+    }
+    header {
+        width: 100%;
+        padding: 15px 0 5px 0;
+    }
+    header h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 200%;
+        letter-spacing: 5px;
+    }
+    #site-nav ul {
+        margin: 10px 0;
+        line-height: 25px;
+        font-size: 90%;
+        text-align: center;
+    }
+    #site-nav ul li a {
+        letter-spacing: 2px;
+        margin: 0 5px 0 0;
+    }
+    
+    /* CATEGORY NAVIGATION */
+    #albums {
+        width: 100%;
+    }
+    .album-list h2 {
+        font-size: 75%;
+        font-weight: 400;
+        padding: 10px 10px;
+    }
+    .album-list h2 a {
+        display: block;
+    }
+    .album-list ul {
+        font-size: 85%;
+        height: 0px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+    .album-list:hover ul {
+        height: 200px;
+    }
+    .album-list ul a {
+        display: block;
+    }
+    .album-list li {
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        float: left;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* PORTFOLIO VIEW */
+    #gallery {
+        width: 100%;
+    }
+    #gallery h2 {
+        padding: 15px 0px 0px 0px;
+        margin: 45px 0 0 0 ;
+        font-size: 120%;
+        font-weight: 700; 
+    }
+    #gallery h3 { 
+        padding: 5px 0 0 0;
+        font-size: 75%;
+        font-weight: 400;
+    }
+    .gallery-default p {
+        font-size: 300%;
+        font-weight: 700;
+        text-shadow: 1px 1px 15px #000000;
+        letter-spacing: 10px;
+        padding: 200px 0;
+    }
+    .view img {
+        max-width: 80%;
+        max-height: 500px;
+        display: block;
+        border: 10px solid #222222;
+        border-radius: 5px;
+        margin: 0 auto;
+        
+    }
+    .image-info {
+        padding: 15px 0;
+        font-size: 75%;
+        font-weight: 400;
+    }
+    .thumbnails {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+        position: relative;
+        text-align: center;
+    }
+    .thumbnails img {
+        display: inline-block;
+        margin: 10px;
+        height: 70px;
+        width: 70px;
+        border-radius: 3px;
+    }
+    .thumbnails img:hover {
+        border-radius: 50%;
+    }
+    .thumbnails ul li {
+        display: inline;
+    }
+    
+    /* FOOTER */
+    footer {
+        position: bottom;
+        clear: both;
+    }
+    footer p {
+        font-size: 75%;
+        letter-spacing: 3px;
+    }
+    footer img {
+        display: inline-block;
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 3px;
+    }
+    footer img:hover {
+        border-radius: 50%;
+    }
+    footer .social {
+        padding: 20px 0 0 0;
+    }
+    footer .copyright {
+        padding: 0 0 50px 0;
+    }
+    .icon-container {
+        width: 100%;
+        margin: 0 auto 20px auto;
+        position: relative;
+        text-align: center;
+    }
+    .stripe {
+        padding: 16px 0;
+        width: 100%;
+    }
+    
+    /* PAGE SECTIONS */
+    #about-section, #copyright-section, #contact-section {
+        padding: 15px;
+    }
+
+    /* COPYRIGHT PAGE */
+    .text-wrapper p {
+        font-size: 75%;
+        letter-spacing: 1.5px;
+        line-height: 16px;
+    }
+    .text-wrapper {
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    /* CONTACT PAGE */
+    .contact-form {
+        width: 90%;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 10px 5%;
+        background-color: #fff7e2;
+    }
+    .contact-form label {
+        font-size: 75%;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 40%;
+        border-top: 2px solid #999999;
+        border-left: 2px solid #999999;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 2px 0 4px 0;
+    }
+    .contact-form textarea {
+        width: 80%;
+    }
+    .submit-button {
+        font-weight: 700;
+        border: 5px solid #CF5854 !important;
+    }
+
+}
